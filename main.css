@@ -2,14 +2,12 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
  }
-  header,
-  main,
-  footer {
-   width: 800px;
-   margin-left: calc(50% - 400px);
+  .container {
+      width: 800px;
+      margin-left: calc(50% - 400px);
   } 
 
-   header{
+   .main-header{
        display: flex;
        gap: 20px;
        align-items: center;
@@ -19,7 +17,7 @@ body {
         
     }
 
-     header>img {
+     .logo {
        height: 40px;
        width: 100px ;
        object-fit: contain;
@@ -27,45 +25,46 @@ body {
 
     }
 
-    nav {
+    .main-nav {
        display: flex;
        gap: 30px;
 
     }
 
-    nav>a {
+    .main-nav > .link {
        
        font-size: 20px;
        color: black;
        text-decoration: none;
     }
-    nav>a:hover {
+    .main-nav > .link:hover {
        text-decoration: underline;
     }
 
-    main{
+    .main-content {
        display: flex;
        align-items: center;
-       gap:20px;
+       gap:50px;
        margin-bottom: 40px;
     }
-    div {
+
+    .left-column {
        width: 40%;
       
     }
 
-    h1 {
+    .title {
        font-size: 40px;
     }
-    span {
+    .title > span {
        font-weight: normal;
     }
 
-    p {
+    .description {
         
     }
 
-    div>a {
+    .btn {
         float: left; 
         margin: 0.5em;
         margin-left: 0;
@@ -84,16 +83,34 @@ body {
         border-radius: 1.6em; 
         border: 0.1em solid rgb(102, 44, 140);
     }
-    div > a:hover {
+    .btn:hover {
         background-color: white;
         color:rgb(102, 44, 140) ;
        
     }
 
-    main>img {
+    .main>image {
        width: 60%;
+
     }
 
-    footer{
-       background-color: gold;  
+    .main-footer {
+       display: flex;  
+       justify-content: space-between;
+       align-items: center;
+    }
+    
+    .social {
+      display: flex;
+      gap: 1em ;
+      
+
+    }
+    .social-link {
+      font-size: 20px;
+      color: gainsboro;
+    }
+    .copyright {
+      margin: 0;
+      
     }
