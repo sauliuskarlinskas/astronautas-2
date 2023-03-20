@@ -59,10 +59,15 @@ body {
     .title > span {
        font-weight: normal;
     }
-
-    .description {
-        
+    .title:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      background-color:rgb(102, 44, 140);
     }
+
+   
 
     .btn {
         float: left; 
